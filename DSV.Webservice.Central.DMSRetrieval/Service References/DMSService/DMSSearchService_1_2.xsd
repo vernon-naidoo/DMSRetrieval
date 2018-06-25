@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:dfs-rt="http://rt.fs.documentum.emc.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://rt.fs.documentum.emc.com/" elementFormDefault="unqualified" targetNamespace="http://rt.fs.documentum.emc.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ServiceException" type="tns:ServiceException" />
+  <xs:complexType name="ServiceException">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="exceptionBean" nillable="true" type="tns:DfsExceptionHolder" />
+      <xs:element minOccurs="0" name="exceptionType" type="xs:string" />
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="messageArgs" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="messageId" type="xs:string" />
+      <xs:element minOccurs="0" name="stackTraceAsString" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DfsExceptionHolder">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="attribute" nillable="true" type="tns:DfsAttributeHolder" />
+      <xs:element minOccurs="0" name="exceptionClass" type="xs:string" />
+      <xs:element minOccurs="0" name="genericType" type="xs:string" />
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+      <xs:element minOccurs="0" name="messageId" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="stackTrace" nillable="true" type="tns:StackTraceHolder" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DfsAttributeHolder">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element minOccurs="0" name="value" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="StackTraceHolder">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="className" type="xs:string" />
+      <xs:element minOccurs="0" name="fileName" type="xs:string" />
+      <xs:element name="lineNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="methodName" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

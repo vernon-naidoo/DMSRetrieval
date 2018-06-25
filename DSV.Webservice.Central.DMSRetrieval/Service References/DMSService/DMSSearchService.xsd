@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws.search.services.dms.uti.com/" xmlns:ns1="http://search.services.dms.uti.com/" targetNamespace="http://ws.search.services.dms.uti.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://jnbupq03.go2uti.com:8443/ssg/wsdl/DMSSearchService_1.xsd?serviceoid=6df44977e7a183884e619b382b37bbc9&amp;servdocoid=6df44977e7a183884e619b382b37bc09" namespace="http://search.services.dms.uti.com/" />
+  <xs:element name="DMSException" type="tns:DMSException" />
+  <xs:element name="advancedSearchGIDoc" type="tns:advancedSearchGIDoc" />
+  <xs:element name="advancedSearchGIDocResponse" type="tns:advancedSearchGIDocResponse" />
+  <xs:element name="advancedSearchMovement" type="tns:advancedSearchMovement" />
+  <xs:element name="advancedSearchMovementResponse" type="tns:advancedSearchMovementResponse" />
+  <xs:element name="advancedSearchShipment" type="tns:advancedSearchShipment" />
+  <xs:element name="advancedSearchShipmentResponse" type="tns:advancedSearchShipmentResponse" />
+  <xs:element name="searchByBrokerageEntryNumber" type="tns:searchByBrokerageEntryNumber" />
+  <xs:element name="searchByBrokerageEntryNumberResponse" type="tns:searchByBrokerageEntryNumberResponse" />
+  <xs:element name="searchByContainerNumber" type="tns:searchByContainerNumber" />
+  <xs:element name="searchByContainerNumberResponse" type="tns:searchByContainerNumberResponse" />
+  <xs:element name="searchByGIInvoiceNumber" type="tns:searchByGIInvoiceNumber" />
+  <xs:element name="searchByGIInvoiceNumberResponse" type="tns:searchByGIInvoiceNumberResponse" />
+  <xs:element name="searchByMasterBillNumber" type="tns:searchByMasterBillNumber" />
+  <xs:element name="searchByMasterBillNumberResponse" type="tns:searchByMasterBillNumberResponse" />
+  <xs:element name="searchByMovementConsolidationNumber" type="tns:searchByMovementConsolidationNumber" />
+  <xs:element name="searchByMovementConsolidationNumberResponse" type="tns:searchByMovementConsolidationNumberResponse" />
+  <xs:element name="searchByShipmentNumber" type="tns:searchByShipmentNumber" />
+  <xs:element name="searchByShipmentNumberResponse" type="tns:searchByShipmentNumberResponse" />
+  <xs:element name="searchContractLogisticsDoc" type="tns:searchContractLogisticsDoc" />
+  <xs:element name="searchContractLogisticsDocResponse" type="tns:searchContractLogisticsDocResponse" />
+  <xs:element name="searchPOADoc" type="tns:searchPOADoc" />
+  <xs:element name="searchPOADocResponse" type="tns:searchPOADocResponse" />
+  <xs:complexType name="searchContractLogisticsDoc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="region" type="xs:string" />
+      <xs:element minOccurs="0" name="business_segment" type="xs:string" />
+      <xs:element minOccurs="0" name="business_unit" type="xs:string" />
+      <xs:element minOccurs="0" name="client_name" type="xs:string" />
+      <xs:element minOccurs="0" name="doc_type" type="xs:string" />
+      <xs:element minOccurs="0" name="ref_number" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchContractLogisticsDocResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:DocURLResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByBrokerageEntryNumber">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="entryNumber" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByBrokerageEntryNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:SearchServiceResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="creationDate" type="xs:string" />
+      <xs:element minOccurs="0" name="destination" type="xs:string" />
+      <xs:element minOccurs="0" name="docCreatorName" type="xs:string" />
+      <xs:element minOccurs="0" name="docSource" type="xs:string" />
+      <xs:element minOccurs="0" name="docType" type="xs:string" />
+      <xs:element minOccurs="0" name="documentName" type="xs:string" />
+      <xs:element minOccurs="0" name="objectId" type="xs:string" />
+      <xs:element minOccurs="0" name="origin" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DMSException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="errorMessage" type="tns:errorMessage" />
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="errorMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="exceptionCode" type="xs:string" />
+      <xs:element minOccurs="0" name="exceptionMessage" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByShipmentNumber">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="shipmentNumber" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByShipmentNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:SearchServiceResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="advancedSearchMovement">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="origin" type="xs:string" />
+      <xs:element minOccurs="0" name="destination" type="xs:string" />
+      <xs:element minOccurs="0" name="creationDateFrom" type="xs:string" />
+      <xs:element minOccurs="0" name="creationDateTo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="advancedSearchMovementResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:SearchServiceResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchPOADoc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="acct_number" type="xs:string" />
+      <xs:element minOccurs="0" name="poa_type" type="xs:string" />
+      <xs:element minOccurs="0" name="country" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchPOADocResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:POAResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByGIInvoiceNumber">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="invoiceNumber" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByGIInvoiceNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:SearchServiceResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByMovementConsolidationNumber">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="movementConsolidationNumber" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByMovementConsolidationNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:SearchServiceResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="advancedSearchShipment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="shipper" type="xs:string" />
+      <xs:element minOccurs="0" name="consignee" type="xs:string" />
+      <xs:element minOccurs="0" name="origin" type="xs:string" />
+      <xs:element minOccurs="0" name="destination" type="xs:string" />
+      <xs:element minOccurs="0" name="creationDateFrom" type="xs:string" />
+      <xs:element minOccurs="0" name="creationDateTo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="advancedSearchShipmentResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:SearchServiceResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByMasterBillNumber">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="movementMasterBillNumber" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByMasterBillNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:SearchServiceResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="advancedSearchGIDoc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="billTo" type="xs:string" />
+      <xs:element minOccurs="0" name="creationDateFrom" type="xs:string" />
+      <xs:element minOccurs="0" name="creationDateTo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="advancedSearchGIDocResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:SearchServiceResponse" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByContainerNumber">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="containerNumber" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="searchByContainerNumberResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:SearchServiceResponse" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

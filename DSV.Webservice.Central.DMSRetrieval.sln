@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSV.Webservice.Central.DMSRetrieval", "DSV.Webservice.Central.DMSRetrieval\DSV.Webservice.Central.DMSRetrieval.csproj", "{328E5E95-3E1A-46C5-AD93-8015DC3D9A80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSV.Webservice.Central.DMSRetrieval.Tests", "DSV.Webservice.Central.DMSRetrieval.Tests\DSV.Webservice.Central.DMSRetrieval.Tests.csproj", "{CDCD5EE6-8A60-4CEB-A6AC-CFD7BEB9CDCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{328E5E95-3E1A-46C5-AD93-8015DC3D9A80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328E5E95-3E1A-46C5-AD93-8015DC3D9A80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328E5E95-3E1A-46C5-AD93-8015DC3D9A80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328E5E95-3E1A-46C5-AD93-8015DC3D9A80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDCD5EE6-8A60-4CEB-A6AC-CFD7BEB9CDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDCD5EE6-8A60-4CEB-A6AC-CFD7BEB9CDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDCD5EE6-8A60-4CEB-A6AC-CFD7BEB9CDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDCD5EE6-8A60-4CEB-A6AC-CFD7BEB9CDCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

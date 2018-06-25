@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://ws.search.services.dms.uti.com/" name="DMSSearchService" targetNamespace="http://ws.search.services.dms.uti.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="https://jnbupq03.go2uti.com:8443/ssg/wsdl/DMSSearchService.xsd?serviceoid=6df44977e7a183884e619b382b37bbc9&amp;servdocoid=6df44977e7a183884e619b382b37bc0b" namespace="http://ws.search.services.dms.uti.com/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="https://jnbupq03.go2uti.com:8443/ssg/wsdl/DMSSearchService_1.xsd?serviceoid=6df44977e7a183884e619b382b37bbc9&amp;servdocoid=6df44977e7a183884e619b382b37bc09" namespace="http://search.services.dms.uti.com/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="https://jnbupq03.go2uti.com:8443/ssg/wsdl/DMSSearchService_1_2.xsd?serviceoid=6df44977e7a183884e619b382b37bbc9&amp;servdocoid=6df44977e7a183884e619b382b37bc0d" namespace="http://rt.fs.documentum.emc.com/" />
+    </xsd:schema>
+  </types>
+  <message name="searchByShipmentNumber">
+    <part name="parameters" element="tns:searchByShipmentNumber" />
+  </message>
+  <message name="searchByShipmentNumberResponse">
+    <part name="parameters" element="tns:searchByShipmentNumberResponse" />
+  </message>
+  <message name="ServiceException">
+    <part xmlns:ns1="http://rt.fs.documentum.emc.com/" name="fault" element="ns1:ServiceException" />
+  </message>
+  <message name="searchByMasterBillNumber">
+    <part name="parameters" element="tns:searchByMasterBillNumber" />
+  </message>
+  <message name="searchByMasterBillNumberResponse">
+    <part name="parameters" element="tns:searchByMasterBillNumberResponse" />
+  </message>
+  <message name="searchByMovementConsolidationNumber">
+    <part name="parameters" element="tns:searchByMovementConsolidationNumber" />
+  </message>
+  <message name="searchByMovementConsolidationNumberResponse">
+    <part name="parameters" element="tns:searchByMovementConsolidationNumberResponse" />
+  </message>
+  <message name="searchByGIInvoiceNumber">
+    <part name="parameters" element="tns:searchByGIInvoiceNumber" />
+  </message>
+  <message name="searchByGIInvoiceNumberResponse">
+    <part name="parameters" element="tns:searchByGIInvoiceNumberResponse" />
+  </message>
+  <message name="searchByContainerNumber">
+    <part name="parameters" element="tns:searchByContainerNumber" />
+  </message>
+  <message name="searchByContainerNumberResponse">
+    <part name="parameters" element="tns:searchByContainerNumberResponse" />
+  </message>
+  <message name="DMSException">
+    <part name="fault" element="tns:DMSException" />
+  </message>
+  <message name="searchByBrokerageEntryNumber">
+    <part name="parameters" element="tns:searchByBrokerageEntryNumber" />
+  </message>
+  <message name="searchByBrokerageEntryNumberResponse">
+    <part name="parameters" element="tns:searchByBrokerageEntryNumberResponse" />
+  </message>
+  <message name="advancedSearchShipment">
+    <part name="parameters" element="tns:advancedSearchShipment" />
+  </message>
+  <message name="advancedSearchShipmentResponse">
+    <part name="parameters" element="tns:advancedSearchShipmentResponse" />
+  </message>
+  <message name="advancedSearchMovement">
+    <part name="parameters" element="tns:advancedSearchMovement" />
+  </message>
+  <message name="advancedSearchMovementResponse">
+    <part name="parameters" element="tns:advancedSearchMovementResponse" />
+  </message>
+  <message name="advancedSearchGIDoc">
+    <part name="parameters" element="tns:advancedSearchGIDoc" />
+  </message>
+  <message name="advancedSearchGIDocResponse">
+    <part name="parameters" element="tns:advancedSearchGIDocResponse" />
+  </message>
+  <message name="searchPOADoc">
+    <part name="parameters" element="tns:searchPOADoc" />
+  </message>
+  <message name="searchPOADocResponse">
+    <part name="parameters" element="tns:searchPOADocResponse" />
+  </message>
+  <message name="searchContractLogisticsDoc">
+    <part name="parameters" element="tns:searchContractLogisticsDoc" />
+  </message>
+  <message name="searchContractLogisticsDocResponse">
+    <part name="parameters" element="tns:searchContractLogisticsDocResponse" />
+  </message>
+  <portType name="DMSSearchServicePort">
+    <operation name="searchByShipmentNumber">
+      <documentation>@param shipmentNumber
+ @return SearchServiceResponse</documentation>
+      <input message="tns:searchByShipmentNumber" />
+      <output message="tns:searchByShipmentNumberResponse" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="searchByMasterBillNumber">
+      <documentation>@param movementMasterBillNumber
+ @return SearchServiceResponse</documentation>
+      <input message="tns:searchByMasterBillNumber" />
+      <output message="tns:searchByMasterBillNumberResponse" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="searchByMovementConsolidationNumber">
+      <documentation>@param movementMasterBillNumber
+ @return SearchServiceResponse</documentation>
+      <input message="tns:searchByMovementConsolidationNumber" />
+      <output message="tns:searchByMovementConsolidationNumberResponse" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="searchByGIInvoiceNumber">
+      <documentation>@param invoiceNumber
+ @return SearchServiceResponse</documentation>
+      <input message="tns:searchByGIInvoiceNumber" />
+      <output message="tns:searchByGIInvoiceNumberResponse" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="searchByContainerNumber">
+      <documentation>@param containerNo
+ @return SearchServiceResponse
+ @throws DMSException</documentation>
+      <input message="tns:searchByContainerNumber" />
+      <output message="tns:searchByContainerNumberResponse" />
+      <fault name="DMSException" message="tns:DMSException" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="searchByBrokerageEntryNumber">
+      <documentation>@param entryNumber
+ @return SearchServiceResponse
+ @throws DMSException</documentation>
+      <input message="tns:searchByBrokerageEntryNumber" />
+      <output message="tns:searchByBrokerageEntryNumberResponse" />
+      <fault name="DMSException" message="tns:DMSException" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="advancedSearchShipment">
+      <documentation>@param shipper
+ @param consignee
+ @param origin
+ @param destination
+ @param creationDateFrom
+ @param creationDateTo
+ @return SearchServiceResponse</documentation>
+      <input message="tns:advancedSearchShipment" />
+      <output message="tns:advancedSearchShipmentResponse" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="advancedSearchMovement">
+      <documentation>@param origin
+ @param destination
+ @param creationDateFrom
+ @param creationDateTo
+ @return SearchServiceResponse</documentation>
+      <input message="tns:advancedSearchMovement" />
+      <output message="tns:advancedSearchMovementResponse" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="advancedSearchGIDoc">
+      <documentation>@param billTo
+ @param creationDateFrom
+ @param creationDateTo
+ @return SearchServiceResponse</documentation>
+      <input message="tns:advancedSearchGIDoc" />
+      <output message="tns:advancedSearchGIDocResponse" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="searchPOADoc">
+      <documentation>This method is added by Priyanka for POA. 
+ @param acct_number : MDM Client Account Number
+ @param poa_type : DMS doc type
+ @param country : 2 letter country code
+ @return ACS URL for the document</documentation>
+      <input message="tns:searchPOADoc" />
+      <output message="tns:searchPOADocResponse" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+    <operation name="searchContractLogisticsDoc">
+      <input message="tns:searchContractLogisticsDoc" />
+      <output message="tns:searchContractLogisticsDocResponse" />
+      <fault name="ServiceException" message="tns:ServiceException" />
+    </operation>
+  </portType>
+  <binding name="DMSSearchServicePortBinding" type="tns:DMSSearchServicePort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="searchByShipmentNumber">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="searchByMasterBillNumber">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="searchByMovementConsolidationNumber">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="searchByGIInvoiceNumber">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="searchByContainerNumber">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="DMSException">
+        <soap:fault use="literal" name="DMSException" namespace="" />
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="searchByBrokerageEntryNumber">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="DMSException">
+        <soap:fault use="literal" name="DMSException" namespace="" />
+      </fault>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="advancedSearchShipment">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="advancedSearchMovement">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="advancedSearchGIDoc">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="searchPOADoc">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="searchContractLogisticsDoc">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="ServiceException">
+        <soap:fault use="literal" name="ServiceException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="DMSSearchService">
+    <port name="DMSSearchServicePort" binding="tns:DMSSearchServicePortBinding">
+      <soap:address location="https://jnbupq03.go2uti.com:8443/fra/dctm/dctmsearch" />
+    </port>
+  </service>
+</definitions>

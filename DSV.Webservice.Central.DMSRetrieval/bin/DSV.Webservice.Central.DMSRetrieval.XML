@@ -1,0 +1,714 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DSV.Webservice.Central.DMSRetrieval</name>
+    </assembly>
+    <members>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentServiceType">
+            <summary>
+            Defines different DocumentService Types
+            </summary>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.ProcessDocument">
+            <summary>
+            ProcessDocument
+            </summary>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.ProcessDocument.CreateDocumentumApiService(System.String)">
+            <summary>
+            CreateDocumentumApiService
+            </summary>
+            <param name="p_objectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.ProcessDocument.CreateDocumentumService(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            CreateDocumentumService
+            </summary>
+            <param name="p_region"></param>
+            <param name="p_businessSegment"></param>
+            <param name="p_businessUnit"></param>
+            <param name="p_client"></param>
+            <param name="p_docType"></param>
+            <param name="p_refNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.ProcessDocument.Start(DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentServiceType,DSV.Webservice.Central.DMSRetrieval.Models.Document)">
+            <summary>
+            Start
+            </summary>
+            <param name="p_documentServiceType"></param>
+            <param name="p_document"></param>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumApiService">
+            <summary>
+            DocumentumApiService
+            </summary>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentService.GetDocumentDetails">
+            <summary>
+            GetDocumentDetails
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentService.DocumentName">
+            <summary>
+            DocumentName
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentService.DocumentByteData">
+            <summary>
+            Actual Document in Byte array
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentService.DocumentType">
+            <summary>
+            Document type
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentService.ErrorMessage">
+            <summary>
+            ErrorMessage
+            </summary>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumApiService.GetDocumentDetails">
+            <summary>
+            GetDocumentDetails
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumApiService.AuthenticationHeaderValue">
+            <summary>
+            AuthenticationHeaderValue
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumApiService.ApiUri">
+            <summary>
+            ApiUri
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumApiService.ObjectId">
+            <summary>
+            ObjectId
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumApiService.GetDocumentName">
+            <summary>
+            gets Document's Name
+            </summary>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumService">
+            <summary>
+            DocumentumService
+            </summary>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumService.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            DocumentumService
+            </summary>
+            <param name="p_region"></param>
+            <param name="p_businessSegment"></param>
+            <param name="p_businessUnit"></param>
+            <param name="p_client"></param>
+            <param name="p_docType"></param>
+            <param name="p_refNo"></param>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumService.GetDocumentData(System.String)">
+            <summary>
+            GetDocumentData
+            </summary>
+            <param name="p_url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumService.GetDocumentDetails">
+            <summary>
+            GetDocumentDetails
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumService.UserId">
+            <summary>
+            DMS Service User Id
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumService.Password">
+            <summary>
+            DMS Service Password
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumService.Region">
+            <summary>
+            Region
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumService.BusinessSegment">
+            <summary>
+            BusinessSegment
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumService.BusinessUnit">
+            <summary>
+            BusinessUnit
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumService.Client">
+            <summary>
+            Client
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumService.DocType">
+            <summary>
+            DocType
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumService.CaptivaRef">
+            <summary>
+            CaptivaRef
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DocumentProcessMethods.DocumentumService.GetDocumentName">
+            <summary>
+            gets Document's Name
+            </summary>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.CommonMethods.HelperOperations">
+            <summary>
+            HelperOperations
+            </summary>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.CommonMethods.HelperOperations.GetSpecificHeaderValueFromHttpHeaders(System.Net.Http.HttpRequestMessage,System.String)">
+            <summary>
+            Gets Specific Header Value From HttpHeaders
+            </summary>
+            <param name="p_request"></param>
+            <param name="p_headerName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.Controllers.DocumentController">
+            <summary>
+            DocumentController
+            </summary>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.Controllers.DocumentController.Get(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Gets document for given input parameters
+            </summary>
+            <param name="objectId"></param>
+            <param name="region"></param>
+            <param name="businessSegment"></param>
+            <param name="businessUnit"></param>
+            <param name="client"></param>
+            <param name="docType"></param>
+            <param name="refNo"></param>
+            <returns></returns>   
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.Controllers.DocumentController.Post(DSV.Webservice.Central.DMSRetrieval.Models.DocumentRequest)">
+            <summary>
+            Gets document for given input parameters
+            </summary>
+            <param name="documentRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.Controllers.DocumentController.ProcessRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            ProcessRequest
+            </summary>
+            <param name="p_method"></param>
+            <param name="p_region"></param>
+            <param name="p_businessSegment"></param>
+            <param name="p_businessUnit"></param>
+            <param name="p_client"></param>
+            <param name="p_docType"></param>
+            <param name="p_refNo"></param>
+            <param name="p_objectId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.WebApiApplication">
+            <summary>
+            WebApiApplication
+            </summary>
+        </member>
+        <member name="F:DSV.Webservice.Central.DMSRetrieval.WebApiApplication.APPLICATION_NAME">
+            <summary>
+            Name used to identify this application in e.g. the log file.
+            </summary>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.WebApiApplication.Application_Start">
+            <summary>
+            Application_Start
+            </summary>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.WebApiApplication.LogApplicationNameAndVersionNumber">
+            <summary>
+            LogApplicationNameAndVersionNumber
+            </summary>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.log4Net.Logger">
+            <summary>
+            Logger
+            </summary>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.log4Net.Logger.Error(System.Object)">
+            <summary>
+            Error
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.log4Net.Logger.Error(System.Object,System.Exception)">
+            <summary>
+            Error
+            </summary>
+            <param name="msg"></param>
+            <param name="ex"></param>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.log4Net.Logger.Error(System.Exception)">
+            <summary>
+            Error
+            </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.log4Net.Logger.Info(System.Object)">
+            <summary>
+            Info
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.Models.Document">
+            <summary>
+            Document
+            </summary>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.Models.DocumentRequest">
+            <summary>
+            DocumentRequest
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.Models.DocumentRequest.Region">
+            <summary>
+            Region supplied as input
+            </summary>           
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.Models.DocumentRequest.BusinessSegment">
+            <summary>
+            BusinessSegment supplied as input
+            </summary>  
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.Models.DocumentRequest.BusinessUnit">
+            <summary>
+            BusinessUnit supplied as input
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.Models.DocumentRequest.Client">
+            <summary>
+            Client supplied as input
+            </summary> 
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.Models.DocumentRequest.DocType">
+            <summary>
+            DocType supplied as input
+            </summary> 
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.Models.DocumentRequest.RefNo">
+            <summary>
+            Captiva ReferenceNumber supplied as input
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.Models.DocumentRequest.ObjectId">
+            <summary>
+            ObjectId supplied as input
+            </summary>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.Models.Document.GetDocument">
+            <summary>
+            GetDocument
+            </summary>
+        </member>
+        <member name="M:DSV.Webservice.Central.DMSRetrieval.Models.Document.ValidateInput">
+            <summary>
+            ValidateInput
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.Models.Document.IsSuccessful">
+            <summary>
+            Is Processing successful
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.Models.Document.ErrorMessage">
+            <summary>
+            Error message if process is not successful
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.Models.Document.DocumentDetails">
+            <summary>
+            DocumentDetails
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.Models.Document.DocumentServiceType">
+            <summary>
+            DocumentServiceType
+            </summary>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.Models.DocumentDetails">
+            <summary>
+            DocumentDetails
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.Models.DocumentDetails.DocumentName">
+            <summary>
+            DocumentName
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.Models.DocumentDetails.DocumentByteData">
+            <summary>
+            Actual Document in Byte array
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.Models.DocumentDetails.DocumentType">
+            <summary>
+            Document type
+            </summary>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.Models.DocumentDetails.ErrorMessage">
+            <summary>
+            ErrorMessage
+            </summary>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.ServiceException">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.ServiceException.exceptionBean">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.ServiceException.exceptionType">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.ServiceException.message">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.ServiceException.messageArgs">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.ServiceException.messageId">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.ServiceException.stackTraceAsString">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.DfsExceptionHolder">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.DfsExceptionHolder.attribute">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.DfsExceptionHolder.exceptionClass">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.DfsExceptionHolder.genericType">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.DfsExceptionHolder.message">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.DfsExceptionHolder.messageId">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.DfsExceptionHolder.stackTrace">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.DfsAttributeHolder">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.DfsAttributeHolder.name">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.DfsAttributeHolder.type">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.DfsAttributeHolder.value">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByContainerNumberResponse">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByContainerNumberResponse.return">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.SearchServiceResponse">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.SearchServiceResponse.status">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.SearchServiceResponse.message">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.SearchServiceResponse.resultCount">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.SearchServiceResponse.SearchResults">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchData">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchData.creationDate">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchData.destination">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchData.docCreatorName">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchData.docSource">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchData.docType">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchData.documentName">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchData.objectId">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchData.origin">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByContainerNumber">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByContainerNumber.containerNumber">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchGIDocResponse">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchGIDocResponse.return">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchGIDoc">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchGIDoc.billTo">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchGIDoc.creationDateFrom">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchGIDoc.creationDateTo">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByMasterBillNumberResponse">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByMasterBillNumberResponse.return">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByMasterBillNumber">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByMasterBillNumber.movementMasterBillNumber">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchShipmentResponse">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchShipmentResponse.return">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchShipment">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchShipment.shipper">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchShipment.consignee">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchShipment.origin">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchShipment.destination">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchShipment.creationDateFrom">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchShipment.creationDateTo">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByMovementConsolidationNumberResponse">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByMovementConsolidationNumberResponse.return">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByMovementConsolidationNumber">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByMovementConsolidationNumber.movementConsolidationNumber">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByGIInvoiceNumberResponse">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByGIInvoiceNumberResponse.return">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByGIInvoiceNumber">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByGIInvoiceNumber.invoiceNumber">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.POAResponse">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.POAResponse.docURL">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.POAResponse.replyStatus">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.POAResponse.message">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchPOADocResponse">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchPOADocResponse.return">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchPOADoc">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchPOADoc.acct_number">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchPOADoc.poa_type">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchPOADoc.country">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchMovementResponse">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchMovementResponse.return">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchMovement">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchMovement.origin">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchMovement.destination">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchMovement.creationDateFrom">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.advancedSearchMovement.creationDateTo">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByShipmentNumberResponse">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByShipmentNumberResponse.return">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByShipmentNumber">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByShipmentNumber.shipmentNumber">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.errorMessage">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.errorMessage.exceptionCode">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.errorMessage.exceptionMessage">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.DMSException">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.DMSException.errorMessage">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.DMSException.message">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByBrokerageEntryNumberResponse">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByBrokerageEntryNumberResponse.return">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByBrokerageEntryNumber">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchByBrokerageEntryNumber.entryNumber">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.DocURLResponse">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.DocURLResponse.documentURL">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.DocURLResponse.replyStatus">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.DocURLResponse.message">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchContractLogisticsDocResponse">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchContractLogisticsDocResponse.return">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.searchContractLogisticsDoc">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchContractLogisticsDoc.region">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchContractLogisticsDoc.business_segment">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchContractLogisticsDoc.business_unit">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchContractLogisticsDoc.client_name">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchContractLogisticsDoc.doc_type">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.searchContractLogisticsDoc.ref_number">
+            <remarks/>
+        </member>
+        <member name="T:DSV.Webservice.Central.DMSRetrieval.DMSService.StackTraceHolder">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.StackTraceHolder.className">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.StackTraceHolder.fileName">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.StackTraceHolder.lineNumber">
+            <remarks/>
+        </member>
+        <member name="P:DSV.Webservice.Central.DMSRetrieval.DMSService.StackTraceHolder.methodName">
+            <remarks/>
+        </member>
+    </members>
+</doc>

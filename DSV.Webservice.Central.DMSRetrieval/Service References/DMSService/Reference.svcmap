@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5215d3eb-dcc2-4a2f-bba8-400364a0cf7d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://jnbupq03.go2uti.com:8443/fra/dctm/dctmsearch?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DMSSearchService_1.xsd" MetadataType="Schema" ID="2e188dcd-a003-4d70-a07a-bf462a4647dd" SourceId="1" SourceUrl="https://jnbupq03.go2uti.com:8443/ssg/wsdl/DMSSearchService_1.xsd?serviceoid=6df44977e7a183884e619b382b37bbc9&amp;servdocoid=6df44977e7a183884e619b382b37bc09" />
+    <MetadataFile FileName="DMSSearchService_1_2.xsd" MetadataType="Schema" ID="353fcc04-bcc3-46fc-922b-3e7a16a254ae" SourceId="1" SourceUrl="https://jnbupq03.go2uti.com:8443/ssg/wsdl/DMSSearchService_1_2.xsd?serviceoid=6df44977e7a183884e619b382b37bbc9&amp;servdocoid=6df44977e7a183884e619b382b37bc0d" />
+    <MetadataFile FileName="DMSSearchService.xsd" MetadataType="Schema" ID="af5b6cf6-70ee-4492-a70b-7df45caaf77b" SourceId="1" SourceUrl="https://jnbupq03.go2uti.com:8443/ssg/wsdl/DMSSearchService.xsd?serviceoid=6df44977e7a183884e619b382b37bbc9&amp;servdocoid=6df44977e7a183884e619b382b37bc0b" />
+    <MetadataFile FileName="DMSSearchService.wsdl" MetadataType="Wsdl" ID="a6361340-c499-4d7e-a972-0eb52e6930d1" SourceId="1" SourceUrl="https://jnbupq03.go2uti.com:8443/fra/dctm/dctmsearch?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
