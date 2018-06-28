@@ -64,7 +64,7 @@ REM *** check for test coverage
 "%OpenCoverExe%" ^
  -target:"%TestRunnerExe%" ^
  -targetargs:"/noisolation /testcontainer:\"%DllContainingTests%\"" ^
- -filter:"+[*]* -[*.Tests*]* -[*]*.Global -[*]*.RouteConfig -[*]*.WebApiConfig" ^
+ REM -filter:"+[*]* -[*.Tests*]* -[*]*.Global -[*]*.RouteConfig -[*]*.WebApiConfig" ^
  -mergebyhash ^
  -skipautoprops ^
  -register:user ^
