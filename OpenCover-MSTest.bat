@@ -14,3 +14,6 @@ if exist "%WORKSPACE%\TestResults" (
 rd /S /Q TestResults
 )
 md TestResults\HTMLJSReport
+
+REM 'Run the .NET Unit Tests with Coverage.'
+"C:\Tools\OpenCover\OpenCover.Console.exe" -target:"%PROGRAMFILES(X86)%\Microsoft Visual Studio 14.0\Common7\IDE\MSTest.exe" -targetargs:"/nologo /noisolation /testcontainer:%UNITTESTPROJECT%\bin\%BUILDMODE%\%UNITTESTPROJECT%.dll /resultsfile:TestResults\UnitTestReport.trx" -filter:"+[%ASSEMBLIES%*]*" -register -mergebyhash -hideskipped:Filter -output:"TestResults\OpenCoverCodeCoverage.xml"
