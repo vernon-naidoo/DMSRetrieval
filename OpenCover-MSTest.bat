@@ -16,4 +16,4 @@ rd /S /Q TestResults
 md TestResults\HTMLJSReport
 
 REM 'Run the .NET Unit Tests with Coverage.'
-"C:\Tools\OpenCover\OpenCover.Console.exe" -target:"%MSTEST_PATH%\MSTest.exe" -targetargs:"/nologo /noisolation /testcontainer:\"%UNITTESTPROJECT%\bin\%BUILDMODE%\%ASSEMBLIES%.Tests.dll\""
+"C:\Tools\OpenCover\OpenCover.Console.exe" -target:"%MSTEST_PATH%\MSTest.exe" -targetargs:"/nologo /noisolation /testcontainer:\"%UNITTESTPROJECT%\bin\%BUILDMODE%\%ASSEMBLIES%.Tests.dll\""filter:"+[%ASSEMBLIES%*]*" -register -mergebyhash -hideskipped:Filter -output:"TestResults\OpenCoverCodeCoverage.xml"
