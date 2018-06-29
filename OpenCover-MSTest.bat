@@ -12,5 +12,5 @@ SET MSTEST_PATH=%PROGRAMFILES(X86)%\Microsoft Visual Studio 14.0\Common7\IDE
 REM 'Clean Unit Tests Reports'
 if exist "%WORKSPACE%\TestResults" (
 rd /S /Q TestResults
-md TestResults\HTMLJSReport
 )
+md TestResults\HTMLJSReport
