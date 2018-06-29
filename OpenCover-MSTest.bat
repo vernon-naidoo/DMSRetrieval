@@ -9,7 +9,8 @@ SET UNITTESTPROJECT=%WORKSPACE%\DSV.Webservice.Central.DMSRetrieval.Tests
 SET ASSEMBLIES=DSV.Webservice.Central.DMSRetrieval
 SET MSTEST_PATH=%PROGRAMFILES(X86)%\Microsoft Visual Studio 14.0\Common7\IDE
 
-echo BUILDMODE: %BUILDMODE%
-echo UNITTESTPROJECT: %UNITTESTPROJECT%
-echo ASSEMBLIES: %ASSEMBLIES%
-echo MSTEST_PATH: %MSTEST_PATH%
+REM 'Clean Unit Tests Reports'
+if exist "%WORKSPACE%\TestResults" (
+rd /S /Q TestResults
+md TestResults\HTMLJSReport
+)
