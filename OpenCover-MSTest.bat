@@ -20,3 +20,7 @@ REM 'Run the .NET Unit Tests with Coverage.'
 
 REM 'Convert MSTest report to JUnit report'
 "C:\Tools\MSTestToJUnit\msxsl.exe" TestResults\UnitTestReport.trx C:\Tools\MSTestToJUnit\mstest-to-junit.xsl -o TestResults\UnitTestsJUnitReport.xml
+
+REM 'Convert OpenConver report to Cobertura report'
+"C:\Tools\OpenCoverToCobertura\OpenCoverToCoberturaConverter.exe" -input:TestResults\OpenCoverCodeCoverage.xml -output:TestResults\CoberturaCodeCoverage.xml -sources:%WORKSPACE%
+ 
