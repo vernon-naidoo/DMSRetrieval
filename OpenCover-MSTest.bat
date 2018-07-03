@@ -16,7 +16,7 @@ rd /S /Q TestResults
 md TestResults\HTMLJSReport
 
 REM 'Run the .NET Unit Tests with Coverage.'
-"C:\Tools\OpenCover\OpenCover.Console.exe" -target:"%MSTEST_PATH%\MSTest.exe" -targetargs:"/nologo /noisolation /testcontainer:\"%UNITTESTPROJECT%\bin\%BUILDMODE%\%ASSEMBLIES%.Tests.dll\"" -filter:"+[%ASSEMBLIES%*]*" -register -mergebyhash -hideskipped:Filter -output:"TestResults\OpenCoverCodeCoverage.xml"
+"C:\Tools\OpenCover\OpenCover.Console.exe" -target:"%MSTEST_PATH%\MSTest.exe" -targetargs:"/nologo /noisolation /testcontainer:\"%UNITTESTPROJECT%\bin\%BUILDMODE%\%ASSEMBLIES%.Tests.dll\"" /resultsfile:"%WORKSPACE%\TestResults\UnitTestReport.trx" -filter:"+[%ASSEMBLIES%*]*" -register -mergebyhash -hideskipped:Filter -output:"TestResults\OpenCoverCodeCoverage.xml"
 
 REM 'Convert MSTest report to JUnit report'
 "C:\Tools\MSTestToJUnit\msxsl.exe" TestResults\UnitTestReport.trx C:\Tools\MSTestToJUnit\mstest-to-junit.xsl -o TestResults\UnitTestsJUnitReport.xml
