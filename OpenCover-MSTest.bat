@@ -24,3 +24,6 @@ REM 'Convert MSTest report to JUnit report'
 REM 'Convert OpenConver report to Cobertura report'
 "C:\Tools\OpenCoverToCobertura\OpenCoverToCoberturaConverter.exe" -input:TestResults\OpenCoverCodeCoverage.xml -output:TestResults\CoberturaCodeCoverage.xml -sources:%WORKSPACE%
  
+REM 'Create HTML Report from OpenCover report.'
+"C:\Tools\ReportGenerator\ReportGenerator.exe" -reports:TestResults\CoberturaCodeCoverage.xml -targetDir:TestResults\HTMLCSReport
+ 
